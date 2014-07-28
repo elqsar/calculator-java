@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:17.0'
+
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.easytesting:fest-assert-core:2.0M10'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
+
+mainClassName = 'cz.boris.demo.calculator.Application'
+
+run {
+    if(project.hasProperty('args')) {
+        args project.args.split('\\s')
+    }
+}

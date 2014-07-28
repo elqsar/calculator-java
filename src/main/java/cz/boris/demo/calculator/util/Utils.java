@@ -9,7 +9,7 @@ public final class Utils {
 
     private Utils() {}
 
-    public static List<String> swap(List<String> list) {
+    public static <T> List<T> swap(List<T> list) {
         if(!list.isEmpty()) {
             list.add(0, list.remove(list.size() - 1));
         }

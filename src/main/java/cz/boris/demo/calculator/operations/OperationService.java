@@ -6,7 +6,9 @@ import java.util.Map;
 /**
  * Created by Boris Musatov
  */
-public class OperationService {
+public final class OperationService {
+
+    private OperationService() {}
 
     public static final String ADD = "add";
 

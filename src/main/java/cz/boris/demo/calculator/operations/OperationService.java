@@ -2,7 +2,6 @@ package cz.boris.demo.calculator.operations;
 
 import com.google.common.collect.Maps;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -10,7 +9,8 @@ import java.util.Map;
  */
 public final class OperationService {
 
-    private OperationService() {}
+    private OperationService() {
+    }
 
     public static final String ADD = "add";
 

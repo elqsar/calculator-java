@@ -8,7 +8,6 @@ import cz.boris.demo.calculator.util.Utils;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

@@ -1,5 +1,6 @@
 package cz.boris.demo.calculator.parser;
 
+import com.google.common.collect.Lists;
 import com.google.common.io.Files;
 import cz.boris.demo.calculator.item.Item;
 import cz.boris.demo.calculator.util.Utils;
@@ -19,7 +20,7 @@ public class DefaultParser implements Parser {
 
     @Override
     public List<Item> parse(String path) throws IOException {
-        List<Item> items = new ArrayList<>();
+        List<Item> items = Lists.newArrayList();
         List<String> lines = Files.readLines(new File(path), Charset.defaultCharset());
         lines = Utils.swap(lines);
         for (String line : lines) {

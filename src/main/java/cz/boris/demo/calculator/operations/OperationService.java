@@ -1,5 +1,7 @@
 package cz.boris.demo.calculator.operations;
 
+import com.google.common.collect.Maps;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,7 +20,7 @@ public final class OperationService {
 
     public static final String DIVIDE = "divide";
 
-    private static Map<String, Operation> operations = new HashMap<>();
+    private static Map<String, Operation> operations = Maps.newHashMap();
 
     static {
         operations.put(ADD, new AddOperation());
